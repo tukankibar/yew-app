@@ -33,6 +33,7 @@ impl Component for Model {
 
         html! {
             <div>
+                <span>{ format!("Value is {}", self.value) }</span>
                 <button onclick={link.callback(|_| Msg::AddOne)}>{ "+1" }</button>
             </div>
         }
